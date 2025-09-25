@@ -11,5 +11,6 @@ requires-python = ">=3.9"
 license = {file = "LICENSE.txt"}
 authors = [{ name = "Arda Akdogan", email = "osmanardakdgn@gmail.com" }]
 dependencies = [
-
+    pandas,
+    seaborn
 ]
