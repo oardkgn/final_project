@@ -12,5 +12,7 @@ license = {file = "LICENSE.txt"}
 authors = [{ name = "Arda Akdogan", email = "osmanardakdgn@gmail.com" }]
 dependencies = [
     pandas,
-    seaborn
+    seaborn,
+    numpy,
+    pandas
 ]

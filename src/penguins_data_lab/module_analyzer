@@ -1,0 +1,20 @@
+from typing import Tuple, Dict, List
+import numpy as np
+import pandas as pd
+
+class Analyzer:
+    """Analysis utilities for Palmer Penguins (with core Python features)."""
+
+    def __init__(self, random_state: int = 42):
+        self.random_state = random_state
+
+    def summary_stats(self, df: pd.DataFrame) -> pd.DataFrame:
+        """Return descriptive statistics for numeric columns."""
+        return df.select_dtypes(include=[np.number]).describe().T
+
+    def manual_value_counts(self, df: pd.DataFrame, column: str) -> Dict[str, int]:
+        """Dict-based counts using a for loop (no pandas .value_counts)."""
+        counts: Dict[str, int] = {}
+        for val in df[column].astype(str):
+            counts[val] = counts.get(val, 0) + 1
+        return counts
