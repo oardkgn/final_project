@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mini_data_lab"
+version = "0.1.0"
+description = "A small data analysis package: load, clean, analyze, and visualize penguins data."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE.txt"}
+authors = [{ name = "Arda Akdogan", email = "osmanardakdgn@gmail.com" }]
+dependencies = [
+
+]
