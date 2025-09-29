@@ -16,7 +16,7 @@ A small but complete, installable Python package that walks through a full mini 
 
 ## What’s inside (modules & classes)
 
-### `DataLoaderCleaner` (in `module1.py`)
+### `DataLoaderCleaner` (in `data_loader.py`)
 - `load_penguins()` — loads the dataset from `seaborn` (portable, no external files).
 - `clean_penguins(df)` — drops essential NAs, casts `species/island/sex` to `category`, removes non-positive measurements, resets index.
 
