@@ -14,5 +14,7 @@ dependencies = [
     pandas,
     seaborn,
     numpy,
-    pandas
+    pandas,
+    "matplotlib",
+    "scikit-learn"
 ]
